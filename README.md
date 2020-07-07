@@ -20,4 +20,18 @@ To compile and immediately execute the program, type the command:
 
     $ make run
 
+The console output from `main.c` will look something like:
+
+    BISECTION METHOD
+    Solution Results: 
+        x = 3.72615
+        Iterations: 28
+        Tol: 7.45058e-09
+
+    SECANT METHOD
+    Solution Results: 
+        x = 3.72615
+        Iterations: 4
+        Tol: 5.27232e-11
+
 If you use code from this repository, I would really appreciate you citing this repo at the top of your code. Always cite your sources!

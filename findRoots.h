@@ -8,7 +8,7 @@
 // ----------------------------------------------------------------------------
 /**
  * Methods include the Secant Method and the Bisection Method. Numerical
- * method pseudocode from:
+ * methods pseudocode from:
  * 
  *  Burden, R. L. and Faires, J. D., Numerical Analysis, 9th ed.,
  *      Brooks/Cole, Massachusetts, 2011.

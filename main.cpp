@@ -7,7 +7,7 @@
 // ----------------------------------------------------------------------------
 /**
  * Methods include the Secant Method and the Bisection Method. Numerical 
- * method pseudocode from:
+ * methods pseudocode from:
  * 
  *  Burden, R. L. and Faires, J. D., Numerical Analysis, 9th ed.,
  *      Brooks/Cole, Massachusetts, 2011.
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
      * For the Bisection Method, we must define an upper and lower bound where
      * we believe the root is.
      */
-    std::cout << "BISECTION METHOD:" << std::endl;
+    std::cout << "BISECTION METHOD" << std::endl;
     double lowBd = 2.0;  // Define left/right bounds
     double upBd = 6.0;
     solnBisect = CalcRoots.BisectionMethod(lowBd, upBd);
@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
      * Just like the Biesection Method, we must define an upper and lower 
      * bound where we believe the root is.
      */
-    std::cout << "SECANT METHOD:" << std::endl;
+    std::cout << "SECANT METHOD" << std::endl;
     solnSecant = CalcRoots.SecantMethod(lowBd, upBd);
     std::cout << "\n";
     return 0;

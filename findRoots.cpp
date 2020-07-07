@@ -7,7 +7,7 @@
 // ----------------------------------------------------------------------------
 /**
  * Methods include the Secant Method and the Bisection Method. This file
- * contains the class attributes/functions. Numerical method pseudocode from:
+ * contains the class attributes/functions. Numerical methods pseudocode from:
  * 
  *  Burden, R. L. and Faires, J. D., Numerical Analysis, 9th ed.,
  *      Brooks/Cole, Massachusetts, 2011.
@@ -37,14 +37,12 @@
 FindRoots::FindRoots(double (*userFunct)(double))
     :funct(userFunct)
 {
-    // userFunct = funct;  // Store function pointer
-
     try {
-        if (funct == nullptr)
+        if (userFunct == nullptr)
             throw(-1);
     }
     catch(int errNum) {
-        std::cerr << "Function returned nullptr. Please pass function pointer." << '\n';
+        std::cerr << "Function returned nullptr. Please pass a function pointer." << '\n';
     }
 }
 
@@ -75,7 +73,7 @@ double FindRoots::BisectionMethod(double a, double b)
         p = a + ((b - a) / 2.0);
         fp = funct(p);
 
-        // Chack for convergence
+        // Check for convergence
         tolCheck = (b - a) / 2.0;
         if (fp == 0.0 || tolCheck <= RootConst::TOL)
         {
